@@ -18,7 +18,7 @@
 
 .header__text {
   color: #ffffff;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 400;
   margin-bottom: 10px;
 }
@@ -26,14 +26,14 @@
 .header__name {
   color: #ffffff;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 700;
 }
 
 .header__phone {
   text-decoration: none;
   color: #ffffff;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 500;
   margin-bottom: 13px;
 }
 
@@ -85,7 +85,7 @@
 .intro__title {
   color: #ffffff;
   font-size: 42px;
-  font-weight: 400;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
@@ -93,7 +93,7 @@
   margin: 15px;
   color: #ffffff;
   font-size: 24px;
-  font-weight: 400;
+  font-weight: 500;
   text-transform: uppercase;
 }
 
@@ -112,20 +112,20 @@
   max-width: 110px;
   color: #ffffff;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 .intro__subtext {
   margin-top: 20px;
   color: #ffffff;
-  font-size: 14px;
-  font-weight: 400;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 .intro__subtext a {
   color: #ffffff;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 500;
   text-decoration: underline;
   text-transform: uppercase;
 }
@@ -134,10 +134,69 @@
   text-align: right;
 }
 
+.advantages {
+  min-height: 470px;
+  background-color: #f6f6f6;
+}
+
+.advantages__inner {
+  text-align: center;
+  padding-top: 70px;
+  margin: 0 100px 100px 100px;
+}
+
+.advantages__title {
+  color: #0d0d0d;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.advantages__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.advantages__block {
+  text-align: center;
+  margin-right: 100px;
+}
+
+.advantages__block:last-child {
+  margin-right: 0;
+}
+
+.advantages__desc {
+  margin-top: 25px;
+  color: #0d0d0d;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.advantages__text {
+  max-width: 290px;
+  min-height: 81px;
+  margin-top: 25px;
+  color: #0d0d0d;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.advantages__text a {
+  color: #ff0000;
+}
+
 body {
   margin: 0;
   padding: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "MuseoSansCyrl", sans-serif;
+  letter-spacing: 0;
 }
 
 *,

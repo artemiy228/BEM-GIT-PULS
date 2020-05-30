@@ -1,0 +1,28 @@
+.header__inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 100px 90px 0;
+}
+.header__block {
+	text-align: center;
+	padding-top: 23px;
+}
+.header__text {
+	color: #ffffff;
+	font-size: 13px;
+	font-weight: 400;
+	margin-bottom: 10px;
+}
+.header__name {
+	color: #ffffff;
+	font-size: 18px;
+	font-weight: 700;
+}
+.header__phone {
+	text-decoration: none;
+	color: #ffffff;
+	font-size: 18px;
+	font-weight: 500;
+	margin-bottom: 13px;
+}
