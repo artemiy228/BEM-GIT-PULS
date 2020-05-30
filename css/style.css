@@ -48,12 +48,36 @@
   text-decoration: none;
 }
 
+.btn:hover {
+  background-color: #b30404;
+}
+
 .btn-red {
   padding: 15px 45px;
   color: #ffffff;
   font-size: 16px;
   font-weight: 400;
   text-transform: uppercase;
+}
+
+.btn-red:hover {
+  background-color: #b30404;
+}
+
+.request--btn {
+  border-radius: 5px;
+  background-color: #c70101;
+  text-decoration: none;
+  padding: 15px 43px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  max-width: 300px;
+}
+
+.request--btn:hover {
+  background-color: #b30404;
 }
 
 .intro {
@@ -190,6 +214,63 @@
 
 .advantages__text a {
   color: #ff0000;
+}
+
+.col-75 {
+  width: 75%;
+  margin-top: 6px;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  margin-top: 15px;
+  width: 300px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+.request {
+  width: 100%;
+  min-height: 680px;
+  background: url("../img/second-bg.jpg") center center/cover no-repeat;
+}
+
+.request__item {
+  display: block;
+}
+
+.request__title {
+  padding-top: 100px;
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.request__sesc {
+  max-width: 400px;
+  margin-top: 80px;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+
+.request__btn {
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 600px) {
+  .col-25,
+  .col-75,
+  input[type="submit"] {
+    width: 100%;
+    margin-top: 10px;
+  }
 }
 
 body {
