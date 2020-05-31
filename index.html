@@ -152,24 +152,13 @@
 						Просто заполните форму заявки
 						и мы перезвоним вам в течении 10 минут
 					</div>
-					<div class="request__item">
-						<div class="col-75">
-							<input type="text" name="firstname" placeholder="Ваше имя">
-						</div>
-					</div>
-					<div class="request__item">
-						<div class="col-75">
-							<input type="text" name="firstname" placeholder="Ваш телефон">
-						</div>
-					</div>
-					<div class="request__item">
-						<div class="col-75">
-							<input type="email" name="firstname" placeholder="Ваш E-mail">
-						</div>
-					</div>
-					<div class="request__btn">
-						<a href="#" class="request--btn">заказать консультацию</a>
-					</div>
+					<form action="#" class="feed__form">
+						<input required name="name" placeholder="Ваше имя" type="text">
+						<input required name="phone" placeholder="Ваш телефон" type="number">
+						<input required name="email" placeholder="Ваш E-mail" type="email">
+						<!-- <input type="submit" value="заказать консультацию" class="btn btn-red"> -->
+						<button href="#" class="request__btn  request--btn">заказать консультацию</button>
+					</form>
 				</div>
 			</div>
 		</div>

@@ -27,11 +27,14 @@
 	text-decoration: none;
 	padding: 15px 43px;
 	color: #ffffff;
-	font-size: 16px;
+	font-size: 15px;
 	font-weight: 400;
 	text-transform: uppercase;
 	max-width: 300px;
 	&:hover {
 		background-color: rgb(179, 4, 4);
 	}
+}
+button {
+	border: 0;
 }

@@ -70,7 +70,7 @@
   text-decoration: none;
   padding: 15px 43px;
   color: #ffffff;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 400;
   text-transform: uppercase;
   max-width: 300px;
@@ -78,6 +78,10 @@
 
 .request--btn:hover {
   background-color: #b30404;
+}
+
+button {
+  border: 0;
 }
 
 .intro {
@@ -223,6 +227,7 @@
 
 input[type="text"],
 input[type="email"],
+input[type="number"],
 select,
 textarea {
   margin-top: 15px;
@@ -261,7 +266,7 @@ textarea {
 }
 
 .request__btn {
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 @media screen and (max-width: 600px) {
@@ -271,6 +276,18 @@ textarea {
     width: 100%;
     margin-top: 10px;
   }
+}
+
+.feed__form {
+  margin-top: 36px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 300px;
 }
 
 body {
