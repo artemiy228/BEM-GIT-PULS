@@ -1,6 +1,6 @@
 // START INPUT
 .col-75 {
-	width: 75%;
+	max-width: 75%;
 	margin-top: 6px;
 }
 input[type="text"],
@@ -18,12 +18,15 @@ textarea {
 
 // END INPUT
 .request {
-	width: 100%;
+	max-width: 100%;
 	min-height: 680px;
 	background: url("../img/second-bg.jpg") center center / cover no-repeat;
 }
 .request__item {
 	display: block;
+}
+.request__header {
+	padding-left: 10px;
 }
 .request__title {
 	padding-top: 100px;
@@ -47,7 +50,7 @@ textarea {
 	.col-25,
 	.col-75,
 	input[type="submit"] {
-		width: 100%;
+		max-width: 100%;
 		margin-top: 10px;
 	}
 }

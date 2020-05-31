@@ -4,7 +4,7 @@
 @import "_advantages";
 @import "_request";
 @import "_forms";
-
+@import "_media";
 
 body {
 	margin: 0;
@@ -25,4 +25,15 @@ body {
 	width: 100%;
 	min-height: 650px;
 	background: url("../img/intro-bg.jpg") center center / cover no-repeat;
+}
+html {
+	width: 100%;
+	max-width: 100%;
+	overflow-x: hidden;
+}
+
+body {
+	width: 100%;
+	max-width: 100%;
+	overflow-x: hidden;
 }
