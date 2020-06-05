@@ -328,7 +328,7 @@ textarea {
     padding-left: 10px;
   }
   .request__title {
-    font-size: 20px;
+    font-size: 25px;
     max-width: 500px;
   }
   .advantages__inner {
@@ -362,8 +362,8 @@ textarea {
   .request__wrapper {
     max-width: 500px;
   }
-  .advantages__title {
-    font-size: 20px;
+  .advantages__inner {
+    margin: 0;
   }
   input {
     max-width: 200px;
@@ -495,7 +495,9 @@ textarea {
     text-align: center;
   }
   .advantages__title {
-    font-size: 15px;
+    font-size: 19px;
+    text-align: center;
+    max-width: 100%;
   }
   .advantages__inner {
     margin-bottom: 50px;
@@ -544,6 +546,12 @@ textarea {
 .carousel .slick-next {
   right: -66px;
   left: auto;
+}
+
+@media (max-width: 400px) {
+  .carousel {
+    padding: 0;
+  }
 }
 
 .catalog {
@@ -787,10 +795,91 @@ textarea {
   }
 }
 
+.reviews__title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.reviews__photo {
+  max-width: 100%;
+}
+
+.reviews__desc {
+  color: #000;
+  margin-left: 60px;
+  max-width: 615px;
+  min-height: 190px;
+}
+
+.reviews__wrapper {
+  margin-top: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.reviews__name {
+  padding-top: 20px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.reviews__sup-text {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #646464;
+}
+
+.reviews__text {
+  margin-top: 15px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.reviews__sub-text, .reviews__last-desc {
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.desc__wrapper--tho {
+  border-top: 1px solid #f6f6f6;
+  border-bottom: 1px solid #f6f6f6;
+}
+
+.reviews__sub-text--tho {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 956px) {
+  .reviews__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .reviews__wrapper img {
+    margin-bottom: 10px;
+  }
+  .reviews__desc {
+    max-width: 500px;
+    margin: 0 25px;
+  }
+}
+
 body {
   margin: 0;
   padding: 0;
-  font-family: "MuseoSansCyrl", sans-serif;
+  font-family: 'Roboto', sans-serif;
   letter-spacing: 0;
 }
 
