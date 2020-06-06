@@ -31,9 +31,9 @@ $(document).ready(function () {
 				e.preventDefault();
 				$('.catalog-item__content').eq(i).toggleClass('catalog-item__content_active');
 				$('.catalog-item__list').eq(i).toggleClass('catalog-item__list_active');
-			})
+			});
 		});
-	};
+	}
 	toggleSlide('.catalog-item__link');
 	toggleSlide('.catalog-item__back');
 
@@ -50,5 +50,39 @@ $(document).ready(function () {
 			$('#order .modal__desc').text($('.catalog-item__subtitle').eq(i).text());
 			$('.overlay, #order').fadeIn('slow');
 		});
+	});
+
+	$('input[name=phone]').mask("+7 (999) 999-9999");
+
+	$('form').submit(function (e) {
+		e.preventDefault();
+		$.ajax({
+			type: "POST",
+			url: "mailer/smart.php",
+			data: $(this).serialize()
+		}).done(function () {
+			$(this).find("input").val("");
+			$('#consultation, #order').fadeOut();
+			$('.overlay, #thanks').fadeIn();
+
+			$('form').trigger('reset');
+		});
+		return false;
+	});
+	// Smooth scroll up
+	$(window).scroll(function () {
+		if ($(this).scrollTop() > 1600) {
+			$('.pageup').fadeIn();
+		} else {
+			$('.pageup').fadeOut();
+		}
+	});
+
+	$("a[href^='#']").click(function () {
+		var _href = $(this).attr("href");
+		$("html, body").animate({
+			scrollTop: $(_href).offset().top + "px"
+		});
+		return false;
 	});
 });

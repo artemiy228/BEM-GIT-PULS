@@ -234,11 +234,7 @@ button {
   margin-top: 6px;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="number"],
-select,
-textarea {
+.form--social {
   margin-top: 15px;
   width: 300px;
   padding: 12px;
@@ -291,7 +287,7 @@ textarea {
   }
 }
 
-.feed__form {
+.feed-form {
   margin-top: 36px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -303,7 +299,7 @@ textarea {
   width: 300px;
 }
 
-.feed__form_mt25 {
+.feed-form_mt25 {
   margin-top: 25px;
 }
 
@@ -812,6 +808,19 @@ textarea {
   display: none;
 }
 
+.pageup {
+  display: none;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  width: 40px;
+  height: 40px;
+}
+
+.pageup img {
+  width: 100%;
+}
+
 @media (max-width: 768px) {
   .header__photo {
     display: none;
@@ -868,7 +877,7 @@ textarea {
   .advantages__block:last-child {
     margin: 0 auto;
   }
-  .feed__form {
+  .feed-form {
     max-width: 250px;
   }
   .request__wrapper {
@@ -1032,6 +1041,15 @@ textarea {
   .modal__close {
     right: 40px;
     top: 10px;
+  }
+}
+
+@media (max-width: 1125px) {
+  .pageup {
+    display: none;
+  }
+  .pageup img {
+    display: none;
   }
 }
 

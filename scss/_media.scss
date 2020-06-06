@@ -64,7 +64,7 @@
 		}
 	}
 
-	.feed__form {
+	.feed-form {
 		max-width: 250px;
 	}
 
@@ -223,9 +223,20 @@
 		padding-top: 5px;
 	}
 }
+
 @media(max-width: 486px) {
 	.modal__close {
 		right: 40px;
 		top: 10px;
+	}
+}
+
+@media (max-width: 1125px) {
+	.pageup {
+		display: none;
+
+		img {
+			display: none;
+		}
 	}
 }

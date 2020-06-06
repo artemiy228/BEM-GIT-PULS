@@ -8,6 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="css/slick.css">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
 	<link rel="stylesheet" href="css/style.css">
 	<title>Pulsometr</title>
 </head>
@@ -15,7 +16,7 @@
 <body>
 
 
-	<div class="bg__photo">
+	<div class="bg__photo" id="up">
 		<header class="header">
 			<div class="container">
 				<div class="header__inner">
@@ -157,10 +158,10 @@
 						Просто заполните форму заявки
 						и мы перезвоним вам в течении 10 минут
 					</div>
-					<form action="#" class="feed__form">
-						<input required name="name" placeholder="Ваше имя" type="text">
-						<input required name="phone" placeholder="Ваш телефон" type="number">
-						<input required name="email" placeholder="Ваш E-mail" type="email">
+					<form id="consultation-form" action="#" class="feed-form">
+						<input required name="name" placeholder="Ваше имя" type="text" class="form--social">
+						<input required name="phone" placeholder="Ваш телефон" class="form--social">
+						<input required name="email" placeholder="Ваш E-mail" type="email" class="form--social">
 						<!-- <input type="submit" value="заказать консультацию" class="btn btn-red"> -->
 						<button href="#" class="request__btn  request--btn">заказать консультацию</button>
 					</form>
@@ -614,9 +615,9 @@
 			<div class="modal__subtitle">Просто заполните форму заявки</div>
 			<div class="modal__desc">и мы перезвоним вам в течении 10 минут</div>
 			<form action="#" class="feed__form  feed__form_mt25">
-				<input required name="name" placeholder="Ваше имя" type="text">
-				<input required name="phone" placeholder="Ваш телефон" type="number">
-				<input required name="email" placeholder="Ваш E-mail" type="email">
+				<input required name="name" placeholder="Ваше имя" type="text" class="form--social">
+				<input required name="phone" placeholder="Ваш телефон" class="form--social">
+				<input required name="email" placeholder="Ваш E-mail" type="email" class="form--social">
 				<!-- <input type="submit" value="заказать консультацию" class="btn btn-red"> -->
 				<button href="#" class="request__btn  request--btn">заказать консультацию</button>
 			</form>
@@ -628,7 +629,7 @@
 			<div class="modal__desc">Пульсометр Polar FT1</div>
 			<form action="#" class="feed__form  feed__form_mt25">
 				<input required name="name" placeholder="Ваше имя" type="text">
-				<input required name="phone" placeholder="Ваш телефон" type="number">
+				<input required name="phone" placeholder="Ваш телефон">
 				<input required name="email" placeholder="Ваш E-mail" type="email">
 				<!-- <input type="submit" value="заказать консультацию" class="btn btn-red"> -->
 				<button href="#" class="request__btn  request--btn">купить</button>
@@ -640,14 +641,18 @@
 			<div class="modal__subtitle">Спасибо за вашу заявку!</div>
 			<div class="modal__desc">Наш менеджер свяжется с вами в ближайшее время!</div>
 		</div>
-
 	</div>
 
+	<a href="#up" class="pageup">
+		<img src="img/chevron-circle-up.svg" alt="up">
+	</a>
 
 	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 	<script src="js/slick.min.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
 	<script src="js/script.js"></script>
+
 </body>
 
 </html>
