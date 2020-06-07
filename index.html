@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="fonts">
 	<link rel="stylesheet" type="text/css" href="css/slick.css">
+	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
 
@@ -163,7 +164,7 @@
 						<input required name="phone" placeholder="Ваш телефон" class="form--social">
 						<input required name="email" placeholder="Ваш E-mail" type="email" class="form--social">
 						<!-- <input type="submit" value="заказать консультацию" class="btn btn-red"> -->
-						<button href="#" class="request__btn  request--btn">заказать консультацию</button>
+						<button class="request__btn  request--btn">заказать консультацию</button>
 					</form>
 				</div>
 			</div>
@@ -172,7 +173,7 @@
 
 
 
-	<section class="carousel">
+	<div class="carousel">
 		<div class="container">
 			<div class="carousel__inner">
 				<div><img src="img/time.png" alt=""></div>
@@ -180,7 +181,7 @@
 				<div><img src="img/polar-m600-trio-1470174547-vnNI-column-width-inline.png" alt=""></div>
 			</div>
 		</div>
-	</section>
+	</div>
 
 
 	<section class="catalog">
@@ -209,7 +210,7 @@
 								ритме</div>
 							<a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
 						</div>
-						<ul class="catalog-item__list">
+						<div class="catalog-item__list">
 							<li>
 								Вы услышите звуковое оповещение о нужном пульсе во время тренировки;
 							</li>
@@ -223,7 +224,7 @@
 								Вы сможете посмотреть данные по 10 тренировкам.
 							</li>
 							<a href="#" class="catalog-item__back">назад</a>
-						</ul>
+						</div>
 					</div>
 					<hr>
 					<div class="catalog-item__footer">
@@ -524,7 +525,7 @@
 				<div class="reviews__title">
 					ОТзывы клиентов
 				</div>
-				<div class="reviews__wrapper">
+				<div class="reviews__wrapper fadeInUp wow" data-wow-duration="2s" data-wow-delay="1s">
 					<div class="reviews__photo">
 						<img src="img/reviews-photo.png" alt="reviews-photo">
 					</div>
@@ -545,7 +546,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="reviews__wrapper">
+				<div class="reviews__wrapper fadeInUp wow" data-wow-duration="2s" data-wow-delay="1s">
 					<div class="reviews__photo">
 						<img src="img/reviews__photo-2.png" alt="reviews-photo">
 					</div>
@@ -565,7 +566,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="reviews__wrapper">
+				<div class="reviews__wrapper fadeInUp wow" data-wow-duration="2s" data-wow-delay="1s">
 					<div class="reviews__photo">
 						<img src="img/reviews__photo-3.png " alt="reviews__photo">
 					</div>
@@ -619,7 +620,7 @@
 				<input required name="phone" placeholder="Ваш телефон" class="form--social">
 				<input required name="email" placeholder="Ваш E-mail" type="email" class="form--social">
 				<!-- <input type="submit" value="заказать консультацию" class="btn btn-red"> -->
-				<button href="#" class="request__btn  request--btn">заказать консультацию</button>
+				<button class="request__btn  request--btn">заказать консультацию</button>
 			</form>
 		</div>
 
@@ -628,11 +629,11 @@
 			<div class="modal__subtitle">Ваш заказ:</div>
 			<div class="modal__desc">Пульсометр Polar FT1</div>
 			<form action="#" class="feed__form  feed__form_mt25">
-				<input required name="name" placeholder="Ваше имя" type="text">
-				<input required name="phone" placeholder="Ваш телефон">
-				<input required name="email" placeholder="Ваш E-mail" type="email">
+				<input required name="name" placeholder="Ваше имя" type="text" class="form--social">
+				<input required name="phone" placeholder="Ваш телефон" class="form--social">
+				<input required name="email" placeholder="Ваш E-mail" type="email" class="form--social">
 				<!-- <input type="submit" value="заказать консультацию" class="btn btn-red"> -->
-				<button href="#" class="request__btn  request--btn">купить</button>
+				<button class="request__btn  request--btn">купить</button>
 			</form>
 		</div>
 
@@ -647,10 +648,11 @@
 		<img src="img/chevron-circle-up.svg" alt="up">
 	</a>
 
-	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-	<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 	<script src="js/slick.min.js"></script>
 	<script src="js/jquery.maskedinput.min.js"></script>
+	<script src="js/wow.min.js"></script>
 	<script src="js/script.js"></script>
 
 </body>
